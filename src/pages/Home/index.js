@@ -28,35 +28,26 @@ export default function Home() {
 
       {
         weatherForecast ? (
-          <>
-            <h1> {weatherForecast.location.name} - {weatherForecast.location.region}</h1>
+          <div className="informations">
+            <h1> {weatherForecast.location.name} </h1>
+
+            <p>
+              {weatherForecast.location.localtime.substr(11)}
+            </p>
 
             <img src={weatherForecast.current.condition.icon} alt="Broken Clouds" />
 
             <h2>{weatherForecast.current.condition.text}</h2>
 
-            <h2>{weatherForecast.current.temp_c}ºC</h2>
+            <h1>{weatherForecast.current.temp_c}ºC</h1>
 
-            {/* <div className="buttons">
-              <Button
-                type="button"
-                value="humidade"
-                onClick={handleClickPrecipotation}
-              />
+            <div className="more-informations">
+              <h2>Vento de: {weatherForecast.current.wind_kph} km/h</h2>
 
-              <Button
-                type="button"
-                value="vento"
-                onClick={handleClickWind}
-              />
-
-            </div> */}
-
-            <h2>Vento de: {weatherForecast.current.wind_kph} km/h</h2>
-
-            <h2>Humidade de: {weatherForecast.current.humidity}%
-            </h2>
-          </>
+              <h2>Humidade de: {weatherForecast.current.humidity}%
+              </h2>
+            </div>
+          </div>
 
         ) : (
           ''

@@ -12,6 +12,7 @@ export default function useHome() {
   const handleSearch = async () => {
     await WeatherService.getWeather(city).then((data) => {
       setWeatherForecast(data);
+      console.log(data);
     });
   };
 

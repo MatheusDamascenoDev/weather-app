@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  margin-top: 50px;
 
   font-family: 'Inter';
   font-style: normal;
@@ -11,6 +10,10 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   text-align: center;
+
+  h1 {
+    margin: 5px;
+  }
 
   color: #000000;
 `;
