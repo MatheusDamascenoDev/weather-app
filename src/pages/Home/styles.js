@@ -6,8 +6,8 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   border: 5px solid;
-  border-radius: 20px;
-  height: 100vh;
+  border-radius: 1.25rem;
+  height: 98vh;
   background: #AEE2FF;
 
   .informations {
@@ -18,36 +18,35 @@ export const Container = styled.div`
     justify-content: center;
 
     h1 {
-      font-size: 24px;
+      font-size: 1.5rem;
       font-weight: bold;
     }
 
     h2 {
-      font-size: 20px;
-      margin: 5px;
+      font-size: 1.25rem;
+      margin: 0.3125rem;
     }
 
     p {
-      margin: 5px;
+      margin: 0.3125rem;
     }
 
     img {
-      width: 150px;
+      width: 9.375rem;
     }
 
     .more-informations {
       display: flex;
       flex-direction: row;
       justify-content: center;
-      margin: 5px;
       width: 100%;
 
       h2 {
         border: 2px solid;
-        border-radius: 5px;
-        padding: 10px;
+        border-radius: 0.3125rem;
+        padding: 0.625rem;
         margin: 5px;
-        font-size: 16px;
+        font-size: 1rem;
         text-align: center;
       }
   }
